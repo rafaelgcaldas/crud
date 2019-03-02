@@ -1,0 +1,71 @@
+<div class="container-fluid">
+
+  <div class="form-row d-flex justify-content-end" style="margin-top: 1rem">
+    <div class="form-group col-md-3">
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Pesquisa de Usuários"
+        #termoDaPesquisa
+        (keyup)="pesquisa(termoDaPesquisa.value)"
+      >
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col-md-2">Nome</th>
+          <th scope="col-md-2">E-mail</th>
+          <th scope="col-md-2">Rua</th>
+          <th scope="col-md-1">Cep</th>
+          <th scope="col-md-1">Número</th>
+          <th scope="col-md-1">Complemento</th>
+          <th scope="col-md-1">Bairro</th>
+          <th scope="col-md-1">Cidade</th>
+          <th scope="col-md-1">Estado</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="this.flag === false; else trMsg">
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{ usuario.nome }}</td>
+          <td>{{ usuario.email }}</td>
+          <td>{{ usuario.rua }}</td>
+          <td>{{ usuario.cep }}</td>
+          <td>{{ usuario.numero }}</td>
+          <td>{{ usuario.complemento }}</td>
+          <td>{{ usuario.bairro }}</td>
+          <td>{{ usuario.cidade }}</td>
+          <td>{{ usuario.estado }}</td>
+          <td>
+            <div class="d-flex justify-content-end">
+              <fa [routerLink]='["update", usuario]' name="pencil" style="margin: 0px 5px; color: blue;"></fa>
+              <fa (click)="delete(usuario, usuario.id)" name="close"  style="margin: 0px 5px; color: red;"></fa>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <ng-template #trMsg>
+        <tbody>
+          <tr>
+              <td colspan="10" style="text-align: center;">Nenhum usuário encontrado...</td>
+            </tr>
+          </tbody>
+        </ng-template>
+    </table>
+
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-end">
+          <button type="button" 
+            class="btn btn-primary" 
+            routerLink="save"
+          >Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

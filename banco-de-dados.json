@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "nome": "Ana da Silva",
+      "email": "ana@gmail.com",
+      "rua": "Rua Maria Bezerra",
+      "cep": "36987150",
+      "numero": "4896",
+      "complemento": "Centro@",
+      "bairro": "Jardim Primavera",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
+      "id": 2
+    },
+    {
+      "nome": "Rafael",
+      "email": "rafa@teste.com",
+      "rua": "Antonio Carvalhosa",
+      "cep": "38850-000",
+      "numero": "111",
+      "complemento": "Praça da Sé",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "id": 3
+    },
+    {
+      "nome": "Ana Julia",
+      "email": "ana@julia.com.br",
+      "rua": "Avenida São José",
+      "cep": "36987001",
+      "numero": "225",
+      "complemento": "Bairro",
+      "bairro": "Piratininga",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "id": 4
+    },
+    {
+      "nome": "José",
+      "email": "jose@jose.com.br",
+      "rua": "José Bonifácio",
+      "cep": "69321555",
+      "numero": "365",
+      "complemento": "Bairro",
+      "bairro": "Jardim Verde",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "id": 5
+    },
+    {
+      "nome": "João Silva",
+      "email": "joao@silva.com.br",
+      "rua": "Avenida Brasil",
+      "cep": "14789335",
+      "numero": "6987",
+      "complemento": "Bairro",
+      "bairro": "Leblon",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
+      "id": 6
+    }
+  ]
+}

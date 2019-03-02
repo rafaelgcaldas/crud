@@ -1,0 +1,9 @@
+input.ng-invalid.ng-touched:not(.empty),
+select.ng-invalid.ng-touched:not(.empty) {
+    border: 1px solid red
+}
+
+input.ng-valid:not(.empty),
+select.ng-valid:not(.empty) {
+    border: 1px solid green
+}
