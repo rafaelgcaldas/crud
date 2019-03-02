@@ -1,5 +1,7 @@
 # CRUD
 
+CRUD com Aangular 6 e json-server simulando web-api
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
 ## Development server
